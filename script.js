@@ -75,7 +75,7 @@ const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
-    alert("Tu consulta fue registrada. Luego conectamos este formulario a correo o backend real.");
+    alert("Tu solicitud fue registrada. Luego conectamos este formulario a correo o backend real.");
     contactForm.reset();
   });
 }
