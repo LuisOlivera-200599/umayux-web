@@ -400,19 +400,19 @@ p{
 }
 
 .card-float{
-  top:20px;
-  left:-10px;
-  width:250px;
-  padding:20px;
-  z-index:2;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  padding: 20px;
+  z-index: 2;
 }
 
 .card-chip{
-  right:0;
-  bottom:0;
-  width:245px;
-  padding:20px;
-  z-index:2;
+  right: 20px;
+  bottom: 20px;
+  width: 245px;
+  padding: 20px;
+  z-index: 2;
 }
 
 .card-float h4,
