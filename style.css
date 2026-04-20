@@ -9,6 +9,8 @@
   --primary: #27b1ff;
   --primary-2: #6ad7ff;
   --accent: #ff9f43;
+  --green: #73c400;
+  --gray-block: #5e6874;
   --shadow: 0 20px 60px rgba(0,0,0,.35);
   --radius-xl: 24px;
   --container: 1180px;
@@ -276,13 +278,13 @@ p{
 /* HERO */
 .hero{
   position:relative;
-  padding:88px 0 44px;
+  padding:88px 0 36px;
   overflow:hidden;
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns: 1.08fr .92fr;
+  grid-template-columns: 1.05fr .95fr;
   gap:34px;
   align-items:center;
 }
@@ -302,7 +304,7 @@ p{
 }
 
 .hero h1{
-  font-size:clamp(2.7rem, 6vw, 5.4rem);
+  font-size:clamp(2.8rem, 6vw, 5.2rem);
   font-weight:800;
   letter-spacing:-0.06em;
   margin-bottom:20px;
@@ -317,8 +319,8 @@ p{
 }
 
 .hero p{
-  max-width:680px;
-  font-size:1.06rem;
+  max-width:660px;
+  font-size:1.05rem;
   margin-bottom:28px;
 }
 
@@ -326,40 +328,11 @@ p{
   display:flex;
   flex-wrap:wrap;
   gap:14px;
-  margin-bottom:28px;
-}
-
-.hero-stats{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:14px;
-  max-width:720px;
-}
-
-.stat{
-  background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:18px;
-  padding:18px;
-  box-shadow:var(--shadow);
-  backdrop-filter: blur(12px);
-}
-
-.stat strong{
-  display:block;
-  font-size:1.6rem;
-  color:#fff;
-  margin-bottom:6px;
-}
-
-.stat span{
-  color:var(--muted);
-  font-size:.92rem;
 }
 
 .hero-visual{
   position:relative;
-  min-height:580px;
+  min-height:560px;
 }
 
 .glass-card{
@@ -373,21 +346,20 @@ p{
 }
 
 .card-main{
-  inset:90px 20px 30px 120px;
+  inset:75px 10px 20px 100px;
 }
 
 .card-main img{
   width:100%;
   height:100%;
   object-fit:cover;
-  opacity:1;
-  filter: brightness(0.88) contrast(1.08);
+  filter:brightness(.85) contrast(1.06);
 }
 
 .card-float{
   top:20px;
-  left:-20px;
-  width:260px;
+  left:-10px;
+  width:250px;
   padding:20px;
   z-index:2;
 }
@@ -395,7 +367,7 @@ p{
 .card-chip{
   right:0;
   bottom:0;
-  width:250px;
+  width:245px;
   padding:20px;
   z-index:2;
 }
@@ -435,6 +407,64 @@ p{
   left:60px;
 }
 
+/* QUICK LINKS */
+.quick-links-section{
+  padding:0 0 18px;
+}
+
+.quick-links-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow:hidden;
+  border-radius:26px;
+  box-shadow:var(--shadow);
+}
+
+.quick-link-card{
+  padding:30px 26px;
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition:.25s ease;
+}
+
+.quick-link-card:hover{
+  transform:translateY(-4px);
+  filter:brightness(1.05);
+}
+
+.quick-link-card h3{
+  margin-bottom:10px;
+  font-size:1.3rem;
+  color:#fff;
+}
+
+.quick-link-card p{
+  color:rgba(255,255,255,.88);
+}
+
+.quick-icon{
+  font-size:2rem;
+  margin-bottom:16px;
+}
+
+.quick-civil{
+  background:#2fc6c6;
+}
+
+.quick-telecom{
+  background:#0b6aa7;
+}
+
+.quick-experience{
+  background:#69b700;
+}
+
+.quick-contact{
+  background:#5d6672;
+}
+
 /* ABOUT */
 .about-grid{
   display:grid;
@@ -443,7 +473,7 @@ p{
   align-items:start;
 }
 
-.about-card, .data-card, .service-card, .project-card, .client-card, .contact-card, .form-card, .advantage-card{
+.about-card, .data-card, .service-card, .project-card, .client-card, .contact-card, .form-card, .specialty-card, .impact-item{
   background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
   border:1px solid rgba(255,255,255,.10);
   border-radius:var(--radius-xl);
@@ -533,7 +563,7 @@ p{
 }
 
 .service-icon,
-.advantage-icon{
+.specialty-icon{
   width:58px;
   height:58px;
   border-radius:18px;
@@ -560,32 +590,92 @@ p{
   background:radial-gradient(circle, rgba(39,177,255,.15), transparent 65%);
 }
 
-/* WHY CHOOSE US */
-.advantages-grid{
+/* SPECIALTIES */
+.specialties-grid{
   display:grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap:20px;
 }
 
-.advantage-card{
+.specialty-card{
   padding:26px;
   transition:.3s ease;
 }
 
-.advantage-card:hover{
+.specialty-card:hover{
   transform:translateY(-6px);
   border-color:rgba(39,177,255,.28);
   box-shadow:0 22px 55px rgba(39,177,255,.12);
 }
 
-.advantage-card h3{
+.specialty-card h3{
   margin-bottom:12px;
   font-size:1.15rem;
 }
 
-.advantage-card p{
+/* IMPACT */
+.impact-section{
+  padding:10px 0 40px;
+}
+
+.impact-grid{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:18px;
+}
+
+.impact-item{
+  padding:26px;
+  text-align:center;
+}
+
+.impact-item strong{
+  display:block;
+  font-size:2.2rem;
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.impact-item span{
   color:var(--muted);
-  line-height:1.7;
+  font-size:.95rem;
+}
+
+/* HIGHLIGHT */
+.highlight-section{
+  padding:10px 0 50px;
+}
+
+.highlight-banner{
+  min-height:420px;
+  border-radius:30px;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(4,16,28,.45), rgba(4,16,28,.45)),
+    url('images/hero.jpg') center/cover no-repeat;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.highlight-overlay{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  padding:60px;
+}
+
+.highlight-content{
+  max-width:560px;
+}
+
+.highlight-content h2{
+  margin-bottom:18px;
+}
+
+.highlight-content p{
+  margin-bottom:22px;
+  color:#d8e7f8;
 }
 
 /* PROJECTS */
@@ -866,13 +956,18 @@ textarea{
   }
 
   .card-main{
-    inset:80px 20px 20px 40px;
+    inset:70px 20px 20px 40px;
   }
 
   .projects-grid,
   .services-grid,
-  .advantages-grid{
+  .specialties-grid,
+  .impact-grid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-links-grid{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -908,13 +1003,11 @@ textarea{
     padding-top:56px;
   }
 
-  .hero-stats{
-    grid-template-columns:1fr;
-  }
-
   .about-list,
   .form-grid,
-  .advantages-grid{
+  .specialties-grid,
+  .impact-grid,
+  .quick-links-grid{
     grid-template-columns:1fr;
   }
 
@@ -931,6 +1024,10 @@ textarea{
 
   .card-chip{
     width:210px;
+  }
+
+  .highlight-overlay{
+    padding:40px 24px;
   }
 }
 
@@ -954,7 +1051,7 @@ textarea{
   }
 
   .hero-visual{
-    min-height:420px;
+    min-height:400px;
   }
 
   .card-main{
@@ -977,8 +1074,14 @@ textarea{
   .project-body,
   .contact-card,
   .form-card,
-  .advantage-card{
+  .specialty-card,
+  .impact-item{
     padding:20px;
+  }
+
+  .quick-link-card{
+    min-height:auto;
+    padding:24px 20px;
   }
 
   .footer-wrap{
