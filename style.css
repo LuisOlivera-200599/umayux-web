@@ -173,6 +173,7 @@ p{
   font-weight:800;
   color:#fff;
   letter-spacing:.06em;
+  flex-shrink:0;
 }
 
 .brand-text h3{
@@ -273,6 +274,7 @@ p{
   color:#fff;
   font-size:1.2rem;
   cursor:pointer;
+  flex-shrink:0;
 }
 
 /* HERO VIDEO */
@@ -1037,11 +1039,53 @@ textarea{
   }
 
   .hero{
-    padding-top:56px;
+    padding-top:48px;
   }
 
   .hero-video-section{
     min-height:auto;
+    padding-bottom:24px;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .hero-copy{
+    max-width:100%;
+  }
+
+  .hero-badge{
+    width:100%;
+    justify-content:flex-start;
+    font-size:1rem;
+    line-height:1.4;
+  }
+
+  .hero h1{
+    font-size:clamp(2.7rem, 10vw, 4rem);
+    line-height:0.98;
+    margin-bottom:18px;
+  }
+
+  .hero p{
+    font-size:1rem;
+    line-height:1.75;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+    max-width:320px;
+  }
+
+  .hero-visual{
+    display:none;
   }
 
   .about-list,
@@ -1057,18 +1101,22 @@ textarea{
     grid-template-columns:1fr;
   }
 
-  .card-float{
-    width:220px;
-    left:0;
-    top:0;
-  }
-
-  .card-chip{
-    width:210px;
-  }
-
   .highlight-overlay{
     padding:40px 24px;
+  }
+
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .data-item{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .data-item strong{
+    text-align:left;
   }
 }
 
@@ -1084,29 +1132,43 @@ textarea{
   }
 
   .nav-wrap{
-    min-height:72px;
+    min-height:78px;
+    gap:12px;
+  }
+
+  .brand{
+    flex:1;
+    min-width:0;
+  }
+
+  .brand-text h3{
+    font-size:0.95rem;
+    line-height:1.05;
+  }
+
+  .brand-text span{
+    font-size:0.72rem;
+    line-height:1.2;
+  }
+
+  .brand-mark{
+    width:56px;
+    height:56px;
+    font-size:1.5rem;
+  }
+
+  .menu-toggle{
+    width:56px;
+    height:56px;
+    font-size:1.4rem;
+  }
+
+  .hero{
+    padding-top:36px;
   }
 
   .hero h1{
-    line-height:1.02;
-  }
-
-  .hero-visual{
-    min-height:400px;
-  }
-
-  .card-main{
-    inset:70px 0 0 0;
-  }
-
-  .card-float{
-    width:180px;
-    padding:14px;
-  }
-
-  .card-chip{
-    width:170px;
-    padding:14px;
+    font-size:clamp(2.9rem, 12vw, 4.3rem);
   }
 
   .about-card,
@@ -1122,11 +1184,18 @@ textarea{
 
   .quick-link-card{
     min-height:auto;
-    padding:24px 20px;
+    padding:28px 20px;
   }
 
   .footer-wrap{
     flex-direction:column;
     align-items:flex-start;
+  }
+
+  .whatsapp-float{
+    width:64px;
+    height:64px;
+    right:16px;
+    bottom:16px;
   }
 }
