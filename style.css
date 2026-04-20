@@ -187,7 +187,7 @@ p{
 .nav{
   display:flex;
   align-items:center;
-  gap:24px;
+  gap:20px;
 }
 
 .nav a{
@@ -195,6 +195,7 @@ p{
   font-weight:500;
   position:relative;
   transition:.25s ease;
+  font-size:.95rem;
 }
 
 .nav a:hover{
@@ -394,8 +395,9 @@ p{
 .card-chip{
   right:0;
   bottom:0;
-  width:260px;
+  width:250px;
   padding:20px;
+  z-index:2;
 }
 
 .card-float h4,
@@ -441,7 +443,7 @@ p{
   align-items:start;
 }
 
-.about-card, .data-card, .service-card, .project-card, .client-card, .contact-card, .form-card{
+.about-card, .data-card, .service-card, .project-card, .client-card, .contact-card, .form-card, .advantage-card{
   background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
   border:1px solid rgba(255,255,255,.10);
   border-radius:var(--radius-xl);
@@ -530,7 +532,8 @@ p{
   box-shadow:0 22px 55px rgba(39,177,255,.12);
 }
 
-.service-icon{
+.service-icon,
+.advantage-icon{
   width:58px;
   height:58px;
   border-radius:18px;
@@ -555,6 +558,34 @@ p{
   height:110px;
   border-radius:50%;
   background:radial-gradient(circle, rgba(39,177,255,.15), transparent 65%);
+}
+
+/* WHY CHOOSE US */
+.advantages-grid{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:20px;
+}
+
+.advantage-card{
+  padding:26px;
+  transition:.3s ease;
+}
+
+.advantage-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(39,177,255,.28);
+  box-shadow:0 22px 55px rgba(39,177,255,.12);
+}
+
+.advantage-card h3{
+  margin-bottom:12px;
+  font-size:1.15rem;
+}
+
+.advantage-card p{
+  color:var(--muted);
+  line-height:1.7;
 }
 
 /* PROJECTS */
@@ -772,6 +803,11 @@ textarea{
   flex-wrap:wrap;
 }
 
+.footer-brand{
+  margin-bottom:8px;
+  font-size:1.2rem;
+}
+
 .footer p{
   font-size:.95rem;
 }
@@ -830,11 +866,12 @@ textarea{
   }
 
   .card-main{
-    inset:70px 30px 20px 30px;
+    inset:80px 20px 20px 40px;
   }
 
   .projects-grid,
-  .services-grid{
+  .services-grid,
+  .advantages-grid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -876,7 +913,8 @@ textarea{
   }
 
   .about-list,
-  .form-grid{
+  .form-grid,
+  .advantages-grid{
     grid-template-columns:1fr;
   }
 
@@ -886,11 +924,13 @@ textarea{
   }
 
   .card-float{
-    width:240px;
+    width:220px;
+    left:0;
+    top:0;
   }
 
   .card-chip{
-    width:220px;
+    width:210px;
   }
 }
 
@@ -918,16 +958,16 @@ textarea{
   }
 
   .card-main{
-    inset:58px 10px 10px 10px;
+    inset:70px 0 0 0;
   }
 
   .card-float{
-    width:190px;
+    width:180px;
     padding:14px;
   }
 
   .card-chip{
-    width:180px;
+    width:170px;
     padding:14px;
   }
 
@@ -936,7 +976,8 @@ textarea{
   .service-card,
   .project-body,
   .contact-card,
-  .form-card{
+  .form-card,
+  .advantage-card{
     padding:20px;
   }
 
