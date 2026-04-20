@@ -55,7 +55,15 @@
   </header>
 
   <main>
-    <section class="hero" id="inicio">
+    <section class="hero hero-video-section" id="inicio">
+      <div class="hero-video-background">
+        <video autoplay muted loop playsinline preload="auto" poster="images/hero.jpg">
+          <source src="media/hero-video.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="hero-badge">Infraestructura, innovación y ejecución técnica</div>
@@ -88,8 +96,8 @@
             </p>
           </div>
 
-          <div class="glass-card card-main">
-            <img src="images/hero.jpg" alt="Proyecto principal UMAYUX">
+          <div class="glass-card card-main hero-video-card">
+            <div class="hero-video-mini-overlay"></div>
           </div>
 
           <div class="glass-card card-chip">
