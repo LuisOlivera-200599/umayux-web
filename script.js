@@ -147,6 +147,22 @@ const galleries = {
       "media/telrad-imagenes/telrad-3.png"
     ]
   },
+  tgi: {
+    title: "TGI",
+    images: [
+      "media/tgi-imagenes/tgi-1.png",
+      "media/tgi-imagenes/tgi-2.png",
+      "media/tgi-imagenes/tgi-3.png"
+    ]
+  },
+  digitel: {
+    title: "DIGITEL",
+    images: [
+      "media/digitel-imagenes/digitel-1.png",
+      "media/digitel-imagenes/digitel-2.png",
+      "media/digitel-imagenes/digitel-3.png"
+    ]
+  },
   montemar: {
     title: "CONDOMINIO MONTEMAR",
     images: [
