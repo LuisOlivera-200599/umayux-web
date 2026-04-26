@@ -75,7 +75,28 @@ const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
-    alert("Tu solicitud fue registrada. Luego conectamos este formulario a correo o backend real.");
+
+    const nombre = document.getElementById("nombre")?.value.trim() || "No especificado";
+    const empresa = document.getElementById("empresa")?.value.trim() || "No especificado";
+    const correo = document.getElementById("correo")?.value.trim() || "No especificado";
+    const telefono = document.getElementById("telefono")?.value.trim() || "No especificado";
+    const servicio = document.getElementById("servicio")?.value.trim() || "No especificado";
+    const mensaje = document.getElementById("mensaje")?.value.trim() || "No especificado";
+
+    const whatsappNumber = "51955989952";
+    const whatsappMessage = `Hola UMAYUX ASOCIADOS SAC, deseo solicitar una cotización.%0A%0A` +
+      `*Datos del solicitante*%0A` +
+      `Nombre: ${encodeURIComponent(nombre)}%0A` +
+      `Empresa: ${encodeURIComponent(empresa)}%0A` +
+      `Correo: ${encodeURIComponent(correo)}%0A` +
+      `Teléfono: ${encodeURIComponent(telefono)}%0A%0A` +
+      `*Servicio requerido*%0A` +
+      `Tipo de servicio: ${encodeURIComponent(servicio)}%0A` +
+      `Detalle del proyecto: ${encodeURIComponent(mensaje)}%0A%0A` +
+      `Quedo atento(a) a su respuesta.`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    window.open(whatsappUrl, "_blank");
     contactForm.reset();
   });
 }
