@@ -290,6 +290,11 @@ p{
   flex-shrink:0;
 }
 
+/* CORRECCIÓN: evita que el menú móvil aparezca en escritorio */
+.mobile-menu{
+  display:none;
+}
+
 /* HERO */
 .hero{
   position:relative;
@@ -886,7 +891,7 @@ p{
 }
 
 /* CLIENTS / AUTHORITY - MODO GOD */
-.authority-grid {
+.authority-grid{
   position: relative;
   display: grid;
   grid-template-columns: minmax(300px, 430px) 1fr;
@@ -911,7 +916,7 @@ p{
     box-shadow .35s ease;
 }
 
-.authority-grid::before {
+.authority-grid::before{
   content: "";
   position: absolute;
   inset: -2px;
@@ -929,7 +934,7 @@ p{
   pointer-events: none;
 }
 
-.authority-grid::after {
+.authority-grid::after{
   content: "";
   position: absolute;
   width: 260px;
@@ -942,7 +947,7 @@ p{
   pointer-events: none;
 }
 
-.authority-grid:hover {
+.authority-grid:hover{
   transform: translateY(-8px);
   border-color: rgba(39,177,255,.34);
   box-shadow:
@@ -951,12 +956,12 @@ p{
     inset 0 1px 0 rgba(255,255,255,.10);
 }
 
-.authority-grid:hover::before {
+.authority-grid:hover::before{
   opacity: 1;
   transform: translateX(35%);
 }
 
-.authority-logo {
+.authority-logo{
   position: relative;
   z-index: 2;
   min-height: 380px;
@@ -974,7 +979,7 @@ p{
     box-shadow .35s ease;
 }
 
-.authority-grid:hover .authority-logo {
+.authority-grid:hover .authority-logo{
   transform: scale(1.025);
   box-shadow:
     0 26px 70px rgba(0,0,0,.34),
@@ -982,7 +987,7 @@ p{
     inset 0 1px 0 rgba(255,255,255,.9);
 }
 
-.authority-logo img {
+.authority-logo img{
   width: 100%;
   max-width: 340px;
   height: auto;
@@ -990,20 +995,20 @@ p{
   filter: contrast(1.03) saturate(1.04);
 }
 
-.authority-content {
+.authority-content{
   position: relative;
   z-index: 2;
   padding: 24px 8px;
 }
 
-.authority-content h3 {
+.authority-content h3{
   margin-bottom: 20px;
   font-size: clamp(1.45rem, 2.5vw, 2rem);
   letter-spacing: -0.03em;
   color: #ffffff;
 }
 
-.authority-content p {
+.authority-content p{
   max-width: 660px;
   margin-bottom: 32px;
   color: #c9d8ea;
@@ -1011,14 +1016,14 @@ p{
   line-height: 1.9;
 }
 
-.authority-tags {
+.authority-tags{
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 12px;
 }
 
-.authority-tags span {
+.authority-tags span{
   position: relative;
   overflow: hidden;
   display: inline-flex;
@@ -1043,7 +1048,7 @@ p{
     box-shadow .25s ease;
 }
 
-.authority-tags span::before {
+.authority-tags span::before{
   content: "";
   position: absolute;
   inset: 0;
@@ -1052,7 +1057,7 @@ p{
   transition: transform .55s ease;
 }
 
-.authority-tags span:hover {
+.authority-tags span:hover{
   transform: translateY(-3px);
   border-color: rgba(39,177,255,.32);
   background:
@@ -1062,7 +1067,7 @@ p{
     inset 0 1px 0 rgba(255,255,255,.10);
 }
 
-.authority-tags span:hover::before {
+.authority-tags span:hover::before{
   transform: translateX(120%);
 }
 
@@ -1099,7 +1104,7 @@ p{
     box-shadow .3s ease;
 }
 
-.client-card:hover {
+.client-card:hover{
   transform: translateY(-5px);
   border-color: rgba(39,177,255,.30);
   box-shadow:
@@ -1287,22 +1292,22 @@ textarea{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .authority-grid {
+  .authority-grid{
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .authority-content {
+  .authority-content{
     text-align: center;
     padding: 8px 0 0;
   }
 
-  .authority-content p {
+  .authority-content p{
     margin-left: auto;
     margin-right: auto;
   }
 
-  .authority-tags {
+  .authority-tags{
     justify-content: center;
   }
 }
@@ -1471,37 +1476,37 @@ textarea{
     align-items:flex-start;
   }
 
-  .authority-grid {
+  .authority-grid{
     padding: 26px;
     gap: 28px;
     border-radius: 24px;
   }
 
-  .authority-logo {
+  .authority-logo{
     min-height: auto;
     padding: 22px;
     border-radius: 20px;
   }
 
-  .authority-logo img {
+  .authority-logo img{
     max-width: 290px;
   }
 
-  .authority-content h3 {
+  .authority-content h3{
     margin-bottom: 16px;
   }
 
-  .authority-content p {
+  .authority-content p{
     margin-bottom: 26px;
     font-size: .95rem;
     line-height: 1.8;
   }
 
-  .authority-tags {
+  .authority-tags{
     gap: 12px;
   }
 
-  .authority-tags span {
+  .authority-tags span{
     width: 100%;
     border-radius: 14px;
   }
