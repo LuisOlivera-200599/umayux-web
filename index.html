@@ -4,28 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>UMAYUX ASOCIADOS SAC | Construcción e Infraestructura en Lima</title>
+  <title>UMAYUX ASOCIADOS SAC | Construcción e Infraestructura</title>
 
-  <meta name="description" content="UMAYUX ASOCIADOS SAC brinda servicios de construcción, obras civiles, infraestructura técnica, montaje de nodos y antenas de telecomunicaciones en Lima, Perú. Solicita tu cotización por WhatsApp." />
-  <meta name="keywords" content="UMAYUX, UMAYUX ASOCIADOS SAC, construcción Lima, obras civiles Perú, infraestructura técnica, telecomunicaciones, montaje de nodos, instalación de antenas, construcción de edificios, San Isidro" />
+  <meta name="description" content="UMAYUX ASOCIADOS SAC brinda servicios de construcción, obras civiles, infraestructura técnica, montaje de nodos y antenas de telecomunicaciones en Lima, Perú." />
+  <meta name="keywords" content="UMAYUX, construcción Lima, obras civiles, telecomunicaciones, antenas, nodos, infraestructura técnica" />
   <meta name="author" content="UMAYUX ASOCIADOS SAC" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#07111f" />
-  <meta name="geo.region" content="PE-LMA" />
-  <meta name="geo.placename" content="San Isidro, Lima, Perú" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_PE" />
-  <meta property="og:site_name" content="UMAYUX ASOCIADOS SAC" />
   <meta property="og:title" content="UMAYUX ASOCIADOS SAC | Construcción e Infraestructura" />
-  <meta property="og:description" content="Soluciones en obras civiles, construcción, infraestructura técnica, montaje de nodos y antenas de telecomunicaciones en Lima, Perú." />
-  <meta property="og:url" content="https://umayuxperu.com/" />
+  <meta property="og:description" content="Construcción, infraestructura técnica y telecomunicaciones en Lima, Perú." />
   <meta property="og:image" content="https://umayuxperu.com/media/logo-umayux.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="UMAYUX ASOCIADOS SAC | Construcción e Infraestructura" />
-  <meta name="twitter:description" content="Construcción, obras civiles, infraestructura técnica y telecomunicaciones en Lima, Perú." />
-  <meta name="twitter:image" content="https://umayuxperu.com/media/logo-umayux.png" />
+  <meta property="og:url" content="https://umayuxperu.com/" />
 
   <link rel="canonical" href="https://umayuxperu.com/" />
   <link rel="icon" href="media/logo-umayux.png" />
@@ -34,323 +23,873 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css?v=galeria-pro-4" />
+  <link rel="stylesheet" href="style.css?v=corregido-final-1" />
 
   <style>
-    #clientes .clients-grid{
-      display:grid!important;
-      grid-template-columns:repeat(3,minmax(0,1fr))!important;
-      gap:24px!important;
-      margin-top:38px!important;
-      align-items:stretch!important;
+    * {
+      box-sizing: border-box;
     }
 
-    #clientes .real-client-card{
-      position:relative!important;
-      min-height:230px!important;
-      padding:24px!important;
-      border-radius:26px!important;
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: #07111f;
+      color: #eaf4ff;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 13, 25, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-wrap {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: #fff;
+      padding: 5px;
+    }
+
+    .brand-text h3 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 800;
+    }
+
+    .brand-text span {
+      font-size: .82rem;
+      color: #9fb2c9;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: .94rem;
+      font-weight: 700;
+      color: #dcecff;
+    }
+
+    .nav a:hover {
+      color: #35c2ff;
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.14);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #51d2ff, #22a9f2);
+      color: #03101d;
+      box-shadow: 0 15px 35px rgba(34,169,242,.25);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.06);
+      color: #fff;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: #fff;
+      border-radius: 12px;
+      padding: 10px 13px;
+      font-size: 1.4rem;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      gap: 14px;
+      padding: 0 0 20px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .hero-video-background {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .32;
+    }
+
+    .hero-video-overlay {
+      position: absolute;
+      inset: 0;
       background:
-        radial-gradient(circle at top left,rgba(39,177,255,.14),transparent 35%),
-        linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.045))!important;
-      border:1px solid rgba(255,255,255,.12)!important;
-      box-shadow:
-        0 22px 55px rgba(0,0,0,.34),
-        inset 0 1px 0 rgba(255,255,255,.08)!important;
-      backdrop-filter:blur(14px)!important;
-      display:flex!important;
-      flex-direction:column!important;
-      align-items:center!important;
-      justify-content:space-between!important;
-      gap:18px!important;
-      overflow:hidden!important;
-      text-align:center!important;
-      transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease!important;
-      cursor:pointer!important;
+        radial-gradient(circle at top right, rgba(39,177,255,.20), transparent 35%),
+        linear-gradient(90deg, rgba(7,17,31,.96), rgba(7,17,31,.72), rgba(7,17,31,.95));
     }
 
-    #clientes .real-client-card:hover{
-      transform:translateY(-7px)!important;
-      border-color:rgba(39,177,255,.34)!important;
-      box-shadow:
-        0 30px 75px rgba(0,0,0,.42),
-        0 0 38px rgba(39,177,255,.14)!important;
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 50px;
+      align-items: center;
+      padding: 90px 0;
     }
 
-    #clientes .client-logo-box{
-      width:100%!important;
-      height:145px!important;
-      padding:18px!important;
-      border-radius:18px!important;
-      background:#fff!important;
-      display:flex!important;
-      align-items:center!important;
-      justify-content:center!important;
-      box-shadow:
-        0 14px 35px rgba(0,0,0,.22),
-        inset 0 1px 0 rgba(255,255,255,.8)!important;
-      overflow:hidden!important;
+    .hero-badge,
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(39,177,255,.10);
+      border: 1px solid rgba(39,177,255,.22);
+      color: #8fdcff;
+      font-weight: 800;
+      font-size: .82rem;
+      margin-bottom: 18px;
     }
 
-    #clientes .client-logo-box img{
-      display:block!important;
-      width:100%!important;
-      max-width:210px!important;
-      height:100%!important;
-      max-height:105px!important;
-      object-fit:contain!important;
-      object-position:center!important;
-      padding:0!important;
-      border-radius:0!important;
-      background:transparent!important;
-      box-shadow:none!important;
-      filter:none!important;
+    .hero h1 {
+      font-size: clamp(2.7rem, 6vw, 5.6rem);
+      line-height: .95;
+      margin: 0 0 22px;
+      letter-spacing: -0.06em;
     }
 
-    #clientes .real-client-card h3{
-      width:100%!important;
-      margin:0!important;
-      padding-top:4px!important;
-      font-size:.88rem!important;
-      line-height:1.3!important;
-      letter-spacing:.06em!important;
-      text-transform:uppercase!important;
-      color:#eaf4ff!important;
+    .gradient {
+      background: linear-gradient(135deg, #ffffff, #45c8ff);
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
-    #clientes .real-client-card:nth-child(4) .client-logo-box img,
-    #clientes .real-client-card:nth-child(5) .client-logo-box img{
-      max-width:150px!important;
+    .hero p,
+    .section-header p,
+    .project-body p,
+    .service-card p,
+    .specialty-card p,
+    .trust-card p,
+    .contact-copy p {
+      color: #a9bad0;
+      line-height: 1.7;
+      font-size: 1rem;
     }
 
-    .client-hint{
-      font-size:.75rem;
-      color:#8fdcff;
-      font-weight:800;
-      letter-spacing:.06em;
-      text-transform:uppercase;
-      opacity:.9;
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
     }
 
-    .gallery-modal{
-      position:fixed;
-      inset:0;
-      z-index:9999;
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding:22px;
+    .hero-image-card {
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 35px 90px rgba(0,0,0,.45);
+      background: rgba(255,255,255,.05);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 95px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto 45px;
+    }
+
+    .section-header h2,
+    .contact-copy h2 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0 0 16px;
+      letter-spacing: -0.05em;
+    }
+
+    .quick-links-section {
+      padding: 35px 0;
+      background: #081523;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .quick-links-grid,
+    .services-grid,
+    .specialties-grid,
+    .trust-grid,
+    .projects-grid,
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .quick-link-card,
+    .service-card,
+    .specialty-card,
+    .trust-card,
+    .project-card,
+    .real-client-card,
+    .about-card,
+    .data-card {
       background:
-        radial-gradient(circle at top left,rgba(39,177,255,.16),transparent 34%),
-        rgba(2,8,16,.86);
-      backdrop-filter:blur(14px);
+        radial-gradient(circle at top left, rgba(39,177,255,.13), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 26px;
+      padding: 26px;
+      box-shadow: 0 22px 55px rgba(0,0,0,.26);
     }
 
-    .gallery-modal.open{
-      display:flex;
+    .quick-icon,
+    .service-icon,
+    .specialty-icon,
+    .trust-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
     }
 
-    .gallery-panel{
-      width:min(1180px,96vw);
-      max-height:94vh;
-      overflow:hidden;
-      border-radius:30px;
-      background:linear-gradient(180deg,rgba(15,33,53,.98),rgba(6,15,28,.98));
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow:0 35px 100px rgba(0,0,0,.62);
-      padding:26px;
+    .quick-link-card h3,
+    .service-card h3,
+    .specialty-card h3,
+    .trust-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
     }
 
-    .gallery-head{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:18px;
-      margin-bottom:20px;
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
     }
 
-    .gallery-kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      padding:7px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.13);
-      background:rgba(255,255,255,.06);
-      color:#8fdcff;
-      font-size:.78rem;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.06em;
-      margin-bottom:10px;
+    .about-list,
+    .data-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
     }
 
-    .gallery-head h3{
-      font-size:clamp(1.55rem,3vw,2.35rem);
-      color:#fff;
-      margin-bottom:8px;
+    .about-list div,
+    .data-item,
+    .contact-info div {
+      padding: 15px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
     }
 
-    .gallery-head p{
-      color:#b8c9dd;
+    .about-list small,
+    .data-item span,
+    .contact-info span {
+      display: block;
+      color: #8fdcff;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+        .impact-section {
+      padding: 50px 0;
+      background: linear-gradient(135deg, rgba(39,177,255,.10), rgba(255,255,255,.04));
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
     }
 
-    .gallery-close{
-      width:46px;
-      height:46px;
-      border-radius:15px;
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.08);
-      color:#fff;
-      font-size:1.6rem;
-      cursor:pointer;
-      transition:.25s ease;
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      text-align: center;
     }
 
-    .gallery-close:hover{
-      transform:translateY(-2px);
-      background:rgba(255,255,255,.14);
+    .impact-item strong {
+      display: block;
+      font-size: 2.5rem;
+      color: #50d1ff;
+      margin-bottom: 8px;
     }
 
-    .gallery-stage{
-      position:relative;
-      border-radius:24px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.12);
-      background:#06111f;
-      box-shadow:0 22px 55px rgba(0,0,0,.42);
+    .impact-item span {
+      color: #b8c9dd;
+      font-weight: 700;
     }
 
-    .gallery-main-img{
-      width:100%;
-      height:min(58vh,620px);
-      object-fit:contain;
-      background:#081523;
-      display:block;
-    }
-        .gallery-nav{
-      position:absolute;
-      top:50%;
-      transform:translateY(-50%);
-      width:48px;
-      height:48px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(3,12,22,.68);
-      color:#fff;
-      font-size:2rem;
-      cursor:pointer;
-      display:grid;
-      place-items:center;
-      backdrop-filter:blur(10px);
-      transition:.25s ease;
+    .highlight-section {
+      padding: 80px 0;
     }
 
-    .gallery-nav:hover{
-      background:rgba(39,177,255,.32);
-      transform:translateY(-50%) scale(1.05);
+    .highlight-banner {
+      min-height: 420px;
+      border-radius: 34px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(7,17,31,.92), rgba(7,17,31,.50)),
+        url("media/construccion-moderna.jpg") center/cover;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 30px 80px rgba(0,0,0,.35);
     }
 
-    .gallery-prev{ left:16px; }
-    .gallery-next{ right:16px; }
-
-    .gallery-counter{
-      position:absolute;
-      left:18px;
-      bottom:18px;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(3,12,22,.72);
-      border:1px solid rgba(255,255,255,.14);
-      color:#dcecff;
-      font-weight:800;
-      font-size:.82rem;
-      backdrop-filter:blur(10px);
+    .highlight-overlay {
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      padding: 44px;
     }
 
-    .gallery-thumbs{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:12px;
-      margin-top:14px;
+    .highlight-content {
+      max-width: 620px;
     }
 
-    .gallery-thumb{
-      height:105px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      overflow:hidden;
-      cursor:pointer;
-      opacity:.62;
-      background:#081523;
-      transition:.25s ease;
+    .highlight-content h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+
+    .projects-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 34px;
+    }
+
+    .projects-copy {
+      max-width: 720px;
+    }
+
+    .projects-copy h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin: 0 0 12px;
+      line-height: 1.05;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      color: #dcecff;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background: #35c2ff;
+      color: #03101d;
+    }
+
+    .project-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .project-media {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .project-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(5,13,25,.74);
+      border: 1px solid rgba(255,255,255,.14);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+    .project-body {
+      padding: 24px;
+    }
+
+    .project-body h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .project-meta span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.09);
+      font-size: .75rem;
+      font-weight: 800;
+      color: #cfe2f7;
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 36px;
+    }
+
+    .real-client-card {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      cursor: pointer;
+      transition: .25s ease;
+    }
+
+    .real-client-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(53,194,255,.45);
+    }
+
+    .client-logo-box {
+      width: 100%;
+      height: 145px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .client-logo-box img {
+      width: 100%;
+      height: 100%;
+      max-width: 220px;
+      max-height: 110px;
+      object-fit: contain;
+    }
+
+    .real-client-card h3 {
+      margin: 18px 0 8px;
+      font-size: .95rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+
+    .client-hint {
+      color: #8fdcff;
+      font-size: .78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .gallery-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: rgba(2, 8, 16, .88);
+      backdrop-filter: blur(14px);
+    }
+
+    .gallery-modal.open {
+      display: flex;
+    }
+
+    .gallery-panel {
+      width: min(1180px, 96vw);
+      max-height: 94vh;
+      overflow: auto;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(15,33,53,.98), rgba(6,15,28,.98));
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 35px 100px rgba(0,0,0,.62);
+      padding: 26px;
+    }
+
+    .gallery-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-kicker {
+      color: #8fdcff;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+
+    .gallery-head h3 {
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
+      margin: 8px 0;
+    }
+
+    .gallery-head p {
+      color: #b8c9dd;
+      margin: 0;
+    }
+
+    .gallery-close {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      font-size: 1.6rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .gallery-stage {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: #06111f;
+    }
+
+    .gallery-main-img {
+      width: 100%;
+      height: min(58vh, 620px);
+      object-fit: contain;
+      background: #081523;
+    }
+
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(3,12,22,.68);
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .gallery-prev {
+      left: 16px;
+    }
+
+    .gallery-next {
+      right: 16px;
+    }
+
+    .gallery-counter {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(3,12,22,.72);
+      border: 1px solid rgba(255,255,255,.14);
+      color: #dcecff;
+      font-weight: 800;
+      font-size: .82rem;
+    }
+
+    .gallery-thumbs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .gallery-thumb {
+      height: 105px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      overflow: hidden;
+      cursor: pointer;
+      opacity: .62;
+      background: #081523;
     }
 
     .gallery-thumb.active,
-    .gallery-thumb:hover{
-      opacity:1;
-      border-color:rgba(39,177,255,.45);
-      box-shadow:0 0 24px rgba(39,177,255,.14);
+    .gallery-thumb:hover {
+      opacity: 1;
+      border-color: rgba(39,177,255,.45);
     }
 
-    .gallery-thumb img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
+    .gallery-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .gallery-foot{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:14px;
-      margin-top:16px;
-      color:#9fb2c9;
-      font-size:.9rem;
+    .gallery-foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 16px;
+      color: #9fb2c9;
+      font-size: .9rem;
     }
 
-    .gallery-foot strong{ color:#fff; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 42px;
+      align-items: center;
+    }
 
-    @media(max-width:1000px){
-      #clientes .clients-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    .contact-copy h2 {
+      margin-bottom: 18px;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .contact-form {
+      background:
+        radial-gradient(circle at top left, rgba(39,177,255,.12), transparent 35%),
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: 0 22px 55px rgba(0,0,0,.26);
+    }
+
+    .contact-form label {
+      display: block;
+      width: 100%;
+      color: #dcecff;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      padding: 15px 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: #fff;
+      outline: none;
+      font: inherit;
+    }
+
+    .contact-form select option {
+      color: #111;
+    }
+
+    .contact-form textarea {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    .contact-form .full {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .footer {
+      padding: 42px 0 20px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: #06111f;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr .7fr .8fr;
+      gap: 28px;
+    }
+
+    .footer h3,
+    .footer h4 {
+      margin: 0 0 10px;
+    }
+
+    .footer p,
+    .footer span,
+    .footer a {
+      display: block;
+      color: #9fb2c9;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      width: min(1180px, 92%);
+      margin: 25px auto 0;
+      color: #8ba2bd;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .nav,
+      .nav-cta {
+        display: none;
       }
 
-      .gallery-main-img{
-        height:min(55vh,520px);
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-links-grid,
+      .services-grid,
+      .specialties-grid,
+      .trust-grid,
+      .projects-grid,
+      .clients-grid,
+      .impact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .projects-top {
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
 
-    @media(max-width:620px){
-      #clientes .clients-grid{
-        grid-template-columns:1fr!important;
+    @media (max-width: 620px) {
+      .hero {
+        min-height: auto;
       }
 
-      #clientes .real-client-card{
-        min-height:210px!important;
+      .hero-grid {
+        padding: 60px 0;
       }
 
-      #clientes .client-logo-box{
-        height:130px!important;
+      .hero h1 {
+        font-size: 2.6rem;
       }
 
-      #clientes .client-logo-box img{
-        max-width:200px!important;
-        max-height:95px!important;
+      .quick-links-grid,
+      .services-grid,
+      .specialties-grid,
+      .trust-grid,
+      .projects-grid,
+      .clients-grid,
+      .impact-grid,
+      .footer-grid,
+      .gallery-thumbs {
+        grid-template-columns: 1fr;
       }
 
-      .gallery-modal{ padding:12px; }
-      .gallery-panel{ padding:18px; border-radius:22px; }
-      .gallery-main-img{ height:46vh; }
-      .gallery-nav{ width:42px; height:42px; border-radius:14px; }
-      .gallery-prev{ left:10px; }
-      .gallery-next{ right:10px; }
-      .gallery-thumbs{ gap:9px; }
-      .gallery-thumb{ height:78px; }
-      .gallery-head{ align-items:center; }
-      .gallery-close{ flex-shrink:0; }
-      .gallery-foot{ flex-direction:column; align-items:flex-start; }
+      .gallery-main-img {
+        height: 46vh;
+      }
+
+      .gallery-foot {
+        flex-direction: column;
+      }
+
+      .brand-text h3 {
+        font-size: .9rem;
+      }
     }
   </style>
 </head>
@@ -360,10 +899,9 @@
     <div class="container">
       <div class="nav-wrap">
         <a href="#inicio" class="brand">
-          <div class="brand-mark logo-mark">
+          <div class="brand-mark">
             <img src="media/logo-umayux.png" alt="Logo UMAYUX ASOCIADOS SAC" />
           </div>
-
           <div class="brand-text">
             <h3>UMAYUX ASOCIADOS SAC</h3>
             <span>Construcción e infraestructura</span>
@@ -399,11 +937,10 @@
   </header>
 
   <main>
-    <section class="hero hero-video-section" id="inicio">
+    <section class="hero" id="inicio">
       <div class="hero-video-background">
         <video autoplay muted loop playsinline preload="auto" poster="media/hero-card.jpg">
           <source src="media/hero-video.mp4" type="video/mp4" />
-          Tu navegador no soporta video HTML5.
         </video>
         <div class="hero-video-overlay"></div>
       </div>
@@ -417,8 +954,7 @@
           </h1>
           <p>
             UMAYUX ASOCIADOS SAC desarrolla soluciones en edificaciones civiles,
-            infraestructura técnica y montaje de nodos de telecomunicaciones,
-            integrando ejecución responsable, enfoque técnico y resultados de alto nivel.
+            infraestructura técnica y montaje de nodos de telecomunicaciones.
           </p>
           <div class="hero-actions">
             <a href="#experiencia" class="btn btn-primary">Explorar experiencia</a>
@@ -427,22 +963,8 @@
         </div>
 
         <div class="hero-visual reveal">
-          <div class="orb one"></div>
-          <div class="orb two"></div>
-
-          <div class="glass-card card-float">
-            <h4>Obras civiles</h4>
-            <p>Proyectos constructivos con planificación, control y ejecución técnica.</p>
-          </div>
-
-          <div class="glass-card card-main hero-image-card">
+          <div class="hero-image-card">
             <img src="media/hero-card.jpg" alt="Trabajo en estructura UMAYUX" />
-            <div class="hero-card-overlay"></div>
-          </div>
-
-          <div class="glass-card card-chip">
-            <h4>Telecomunicaciones</h4>
-            <p>Montaje de nodos, antenas e infraestructura especializada en campo.</p>
           </div>
         </div>
       </div>
@@ -451,25 +973,25 @@
     <section class="quick-links-section">
       <div class="container">
         <div class="quick-links-grid reveal">
-          <a href="#servicios" class="quick-link-card quick-civil">
+          <a href="#servicios" class="quick-link-card">
             <div class="quick-icon">🏗️</div>
             <h3>Obras civiles</h3>
             <p>Ejecución de proyectos constructivos con enfoque técnico.</p>
           </a>
 
-          <a href="#especialidades" class="quick-link-card quick-telecom">
+          <a href="#especialidades" class="quick-link-card">
             <div class="quick-icon">📡</div>
             <h3>Telecomunicaciones</h3>
             <p>Nodos, antenas e infraestructura para conectividad.</p>
           </a>
 
-          <a href="#experiencia" class="quick-link-card quick-experience">
+          <a href="#experiencia" class="quick-link-card">
             <div class="quick-icon">🧱</div>
             <h3>Experiencia</h3>
             <p>Conoce nuestros trabajos y áreas de intervención.</p>
           </a>
 
-          <a href="#contacto" class="quick-link-card quick-contact">
+          <a href="#contacto" class="quick-link-card">
             <div class="quick-icon">📋</div>
             <h3>Solicitar cotización</h3>
             <p>Cuéntanos tu proyecto y te contactamos.</p>
@@ -477,379 +999,80 @@
         </div>
       </div>
     </section>
-        <section class="section" id="nosotros">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="eyebrow">Sobre la empresa</div>
-          <h2>Una empresa que combina construcción, técnica y proyección.</h2>
-          <p>
-            UMAYUX ASOCIADOS SAC integra experiencia en obras civiles e infraestructura
-            para telecomunicaciones, desarrollando proyectos con responsabilidad,
-            calidad y enfoque en cumplimiento.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <article class="about-card reveal">
-            <h3 class="sub-title">¿Quiénes somos?</h3>
-            <p>
-              <strong class="white">UMAYUX ASOCIADOS SAC</strong> es una empresa peruana
-              dedicada a la ejecución de proyectos de construcción e infraestructura,
-              con experiencia en edificaciones civiles y trabajos especializados en
-              telecomunicaciones, incluyendo montaje de nodos y antenas.
-            </p>
-
-            <div class="about-list">
-              <div>
-                <small>Misión</small>
-                <strong>Brindar soluciones integrales con calidad, eficiencia y seguridad.</strong>
-              </div>
-              <div>
-                <small>Visión</small>
-                <strong>Ser referente nacional en obras civiles y telecomunicaciones.</strong>
-              </div>
-              <div>
-                <small>Enfoque</small>
-                <strong>Innovación, cumplimiento técnico y atención personalizada.</strong>
-              </div>
-              <div>
-                <small>Valores</small>
-                <strong>Compromiso, responsabilidad, calidad e innovación.</strong>
-              </div>
-            </div>
-          </article>
-
-          <aside class="data-card reveal">
-            <h3 class="sub-card-title">Ficha corporativa</h3>
-            <div class="data-grid">
-              <div class="data-item"><span>Razón social</span><strong>UMAYUX ASOCIADOS SAC</strong></div>
-              <div class="data-item"><span>RUC</span><strong>20611721791</strong></div>
-              <div class="data-item"><span>Tipo de empresa</span><strong>Sociedad Anónima Cerrada</strong></div>
-              <div class="data-item"><span>Estado</span><strong>Activo</strong></div>
-              <div class="data-item"><span>Inicio de actividades</span><strong>08 de noviembre de 2023</strong></div>
-              <div class="data-item"><span>Actividad comercial</span><strong>Construcción de edificios completos</strong></div>
-              <div class="data-item"><span>Dirección</span><strong>Augusto Tamayo 190, San Isidro 15046, Perú</strong></div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section trust-section" id="confianza">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="eyebrow">Por qué elegirnos</div>
-          <h2>Confianza técnica para ejecutar proyectos sin improvisar.</h2>
-          <p>
-            Trabajamos con orden, comunicación clara y enfoque en resultados medibles
-            desde la planificación hasta la entrega.
-          </p>
-        </div>
-
-        <div class="trust-grid">
-          <article class="trust-card reveal">
-            <div class="trust-icon">✅</div>
-            <h3>Cumplimiento técnico</h3>
-            <p>Planificación y ejecución alineadas a los requerimientos del proyecto.</p>
-          </article>
-
-          <article class="trust-card reveal">
-            <div class="trust-icon">🦺</div>
-            <h3>Seguridad en campo</h3>
-            <p>Priorizamos trabajos seguros, responsables y controlados durante cada intervención.</p>
-          </article>
-
-          <article class="trust-card reveal">
-            <div class="trust-icon">📋</div>
-            <h3>Gestión ordenada</h3>
-            <p>Seguimiento, control y comunicación para reducir riesgos y retrasos.</p>
-          </article>
-
-          <article class="trust-card reveal">
-            <div class="trust-icon">📡</div>
-            <h3>Especialización dual</h3>
-            <p>Integramos experiencia en construcción civil e infraestructura telecom.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="eyebrow">Servicios</div>
-          <h2>Soluciones constructivas y técnicas con ejecución de alto impacto.</h2>
-          <p>
-            Nuestras áreas de trabajo integran infraestructura civil y soluciones
-            para telecomunicaciones, adaptadas a requerimientos reales de obra y operación.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-icon">🏗️</div>
-            <h3>Edificaciones civiles</h3>
-            <p>Desarrollo de proyectos de construcción con planificación, control y calidad.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🏢</div>
-            <h3>Construcción de edificios</h3>
-            <p>Ejecución integral de estructuras y obras civiles para diversos requerimientos.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">📡</div>
-            <h3>Montaje de nodos</h3>
-            <p>Implementación técnica de nodos e infraestructura asociada al sector telecom.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🛰️</div>
-            <h3>Instalación de antenas</h3>
-            <p>Soluciones de montaje, soporte e instalación especializada en campo.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">⚙️</div>
-            <h3>Infraestructura técnica</h3>
-            <p>Soporte estructural y técnico para proyectos que requieren precisión operativa.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">🛠️</div>
-            <h3>Mantenimiento y soporte</h3>
-            <p>Atención de requerimientos correctivos y preventivos según las necesidades del cliente.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="especialidades">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="eyebrow">Especialidades</div>
-          <h2>Capacidades que fortalecen cada proyecto.</h2>
-          <p>
-            Integramos experiencia constructiva y soporte técnico para atender
-            proyectos de infraestructura con altos estándares de ejecución.
-          </p>
-        </div>
-
-        <div class="specialties-grid">
-          <article class="specialty-card reveal">
-            <div class="specialty-icon">🏢</div>
-            <h3>Construcción civil</h3>
-            <p>Soluciones para proyectos constructivos con enfoque estructural y operativo.</p>
-          </article>
-
-          <article class="specialty-card reveal">
-            <div class="specialty-icon">📶</div>
-            <h3>Telecomunicaciones</h3>
-            <p>Infraestructura orientada a conectividad, soporte técnico y operación en campo.</p>
-          </article>
-
-          <article class="specialty-card reveal">
-            <div class="specialty-icon">🗼</div>
-            <h3>Montaje de antenas</h3>
-            <p>Instalación y soporte de estructuras para proyectos de comunicación y cobertura.</p>
-          </article>
-
-          <article class="specialty-card reveal">
-            <div class="specialty-icon">🧰</div>
-            <h3>Soluciones integrales</h3>
-            <p>Atendemos requerimientos técnicos desde la planificación hasta la ejecución.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="impact-section">
-      <div class="container">
-        <div class="impact-grid reveal">
-          <div class="impact-item"><strong data-counter="25">0</strong><span>Proyectos ejecutados</span></div>
-          <div class="impact-item"><strong data-counter="12">0</strong><span>Clientes atendidos</span></div>
-          <div class="impact-item"><strong data-counter="100">0</strong><span>Compromiso con calidad</span></div>
-          <div class="impact-item"><strong data-counter="2">0</strong><span>Líneas principales de especialización</span></div>
-        </div>
-      </div>
-    </section>
-        <section class="highlight-section">
-      <div class="container">
-        <div class="highlight-banner reveal">
-          <div class="highlight-overlay">
-            <div class="highlight-content">
-              <div class="eyebrow">Propuesta de valor</div>
-              <h2>Infraestructura que conecta. Construcciones que perduran.</h2>
-              <p>
-                Ejecutamos proyectos con enfoque técnico, orden operativo y compromiso real
-                con el resultado final.
-              </p>
-              <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="experiencia">
-      <div class="container">
-        <div class="projects-top reveal">
-          <div class="projects-copy">
-            <div class="eyebrow">Experiencia</div>
-            <h2 class="mb-14">Proyectos que hablan por la empresa.</h2>
-            <p>
-              Esta sección muestra trabajos representativos en obras civiles y telecomunicaciones,
-              integrando ejecución técnica, seguridad y enfoque en resultados.
-            </p>
-          </div>
-
-          <div class="filters">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="civil">Obras civiles</button>
-            <button class="filter-btn" data-filter="telecom">Telecomunicaciones</button>
-          </div>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card reveal" data-category="civil">
-            <div class="project-media">
-              <img src="media/edificacion-estructural.jpg" alt="Edificación civil" />
-              <div class="project-tag">Obra civil</div>
-            </div>
-            <div class="project-body">
-              <h3>Proyecto de edificación estructural</h3>
-              <p>Desarrollo y ejecución de infraestructura civil con enfoque en calidad constructiva.</p>
-              <div class="project-meta"><span>Estructuras</span><span>Construcción</span><span>Lima</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="telecom">
-            <div class="project-media">
-              <img src="media/nodo-telecomunicaciones.jpg" alt="Nodo de telecomunicaciones" />
-              <div class="project-tag">Telecom</div>
-            </div>
-            <div class="project-body">
-              <h3>Implementación de nodo técnico</h3>
-              <p>Montaje e integración de componentes para infraestructura de telecomunicaciones.</p>
-              <div class="project-meta"><span>Nodos</span><span>Montaje</span><span>Telecom</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="telecom">
-            <div class="project-media">
-              <img src="media/antenas-telecomunicaciones.jpg" alt="Antena de telecomunicación" />
-              <div class="project-tag">Antenas</div>
-            </div>
-            <div class="project-body">
-              <h3>Montaje de antena e infraestructura</h3>
-              <p>Soluciones para instalación y soporte de antenas, con enfoque en seguridad y operatividad.</p>
-              <div class="project-meta"><span>Antenas</span><span>Infraestructura</span><span>Campo</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="civil">
-            <div class="project-media">
-              <img src="media/construccion-moderna.jpg" alt="Construcción moderna" />
-              <div class="project-tag">Obra civil</div>
-            </div>
-            <div class="project-body">
-              <h3>Ejecución de obra moderna</h3>
-              <p>Proyecto enfocado en la construcción con control de procesos y una propuesta técnica eficiente.</p>
-              <div class="project-meta"><span>Calidad</span><span>Gestión</span><span>Obra</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="telecom">
-            <div class="project-media">
-              <img src="media/instalacion-telecomunicaciones.jpg" alt="Infraestructura telecomunicaciones" />
-              <div class="project-tag">Telecom</div>
-            </div>
-            <div class="project-body">
-              <h3>Infraestructura para comunicaciones</h3>
-              <p>Intervenciones especializadas para soporte técnico, conectividad y despliegue de infraestructura.</p>
-              <div class="project-meta"><span>Soporte</span><span>Campo</span><span>Operación</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="civil">
-            <div class="project-media">
-              <img src="media/obra-civil.jpg" alt="Obra civil UMAYUX" />
-              <div class="project-tag">Construcción</div>
-            </div>
-            <div class="project-body">
-              <h3>Soluciones de obra civil</h3>
-              <p>Trabajos constructivos orientados al cumplimiento técnico y a la eficiencia de ejecución.</p>
-              <div class="project-meta"><span>Obra</span><span>Gestión</span><span>Calidad</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="clientes">
+        <section class="section" id="clientes">
       <div class="container">
         <div class="section-header reveal">
           <div class="eyebrow">Clientes</div>
           <h2>Empresas que confían en nuestro trabajo.</h2>
           <p>
-            Participamos en proyectos vinculados a infraestructura, construcción y telecomunicaciones,
+            Participamos en proyectos de infraestructura, construcción y telecomunicaciones,
             brindando soporte técnico y ejecución responsable.
           </p>
         </div>
 
         <div class="clients-grid">
+
           <article class="real-client-card reveal" data-gallery="cliente1">
             <div class="client-logo-box">
-              <img src="media/cliente-1.png" alt="Cliente UMAYUX" />
+              <img src="media/digitel-imagenes/digitel-1.png" alt="Digitel" />
             </div>
-            <h3>Cliente corporativo</h3>
+            <h3>DIGITEL</h3>
             <span class="client-hint">Ver galería</span>
           </article>
 
           <article class="real-client-card reveal" data-gallery="cliente2">
             <div class="client-logo-box">
-              <img src="media/cliente-2.png" alt="Cliente UMAYUX" />
+              <img src="media/lps-imagenes/lps-1.png" alt="LPS Grupo" />
             </div>
-            <h3>Cliente estratégico</h3>
+            <h3>LPS GRUPO</h3>
             <span class="client-hint">Ver galería</span>
           </article>
 
           <article class="real-client-card reveal" data-gallery="cliente3">
             <div class="client-logo-box">
-              <img src="media/cliente-3.png" alt="Cliente UMAYUX" />
+              <img src="media/montemar-imagenes/montemar-1.png" alt="Montemar" />
             </div>
-            <h3>Aliado técnico</h3>
+            <h3>MONTEMAR</h3>
             <span class="client-hint">Ver galería</span>
           </article>
 
           <article class="real-client-card reveal" data-gallery="cliente4">
             <div class="client-logo-box">
-              <img src="media/cliente-4.png" alt="Cliente UMAYUX" />
+              <img src="media/telrad-imagenes/telrad-1.png" alt="Telrad" />
             </div>
-            <h3>Proyecto especializado</h3>
+            <h3>TELRAD</h3>
             <span class="client-hint">Ver galería</span>
           </article>
 
           <article class="real-client-card reveal" data-gallery="cliente5">
             <div class="client-logo-box">
-              <img src="media/cliente-5.png" alt="Cliente UMAYUX" />
+              <img src="media/tgi-imagenes/tgi-1.png" alt="TGI" />
             </div>
-            <h3>Infraestructura y soporte</h3>
+            <h3>TGI</h3>
             <span class="client-hint">Ver galería</span>
           </article>
+
+          <article class="real-client-card reveal" data-gallery="cliente6">
+            <div class="client-logo-box">
+              <img src="media/yofc-imagenes/yofc-1.png" alt="YOFC" />
+            </div>
+            <h3>YOFC</h3>
+            <span class="client-hint">Ver galería</span>
+          </article>
+
         </div>
       </div>
     </section>
-        <section class="section" id="contacto">
+
+    <section class="section" id="contacto">
       <div class="container">
         <div class="contact-grid">
+
           <div class="contact-copy reveal">
             <div class="eyebrow">Contacto</div>
             <h2>Conversemos sobre tu próximo proyecto.</h2>
             <p>
-              Escríbenos para solicitar información, coordinar una visita técnica
-              o pedir una cotización de acuerdo con los requerimientos de tu obra.
+              Escríbenos para coordinar una visita técnica o solicitar cotización.
             </p>
 
             <div class="contact-info">
@@ -863,11 +1086,7 @@
               </div>
               <div>
                 <span>Dirección</span>
-                <strong>Augusto Tamayo 190, San Isidro 15046, Perú</strong>
-              </div>
-              <div>
-                <span>Actividad</span>
-                <strong>Construcción de edificios completos</strong>
+                <strong>San Isidro, Lima, Perú</strong>
               </div>
             </div>
           </div>
@@ -879,7 +1098,7 @@
             </label>
 
             <label>
-              Correo electrónico
+              Correo
               <input type="email" placeholder="correo@empresa.com" />
             </label>
 
@@ -889,30 +1108,28 @@
             </label>
 
             <label>
-              Servicio requerido
+              Servicio
               <select>
                 <option>Selecciona una opción</option>
                 <option>Obras civiles</option>
-                <option>Construcción de edificios</option>
-                <option>Montaje de nodos</option>
-                <option>Instalación de antenas</option>
-                <option>Infraestructura técnica</option>
-                <option>Mantenimiento y soporte</option>
+                <option>Telecomunicaciones</option>
+                <option>Infraestructura</option>
+                <option>Mantenimiento</option>
               </select>
             </label>
 
             <label>
               Mensaje
-              <textarea placeholder="Cuéntanos brevemente sobre tu proyecto"></textarea>
+              <textarea placeholder="Cuéntanos sobre tu proyecto"></textarea>
             </label>
 
             <a class="btn btn-primary full"
-               href="https://wa.me/51999999999?text=Hola%20UMAYUX%20ASOCIADOS%20SAC,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios."
-               target="_blank"
-               rel="noopener">
+               href="https://wa.me/51955989952"
+               target="_blank">
               Enviar por WhatsApp
             </a>
           </form>
+
         </div>
       </div>
     </section>
@@ -920,280 +1137,121 @@
 
   <div class="gallery-modal" id="galleryModal">
     <div class="gallery-panel">
+
       <div class="gallery-head">
         <div>
-          <span class="gallery-kicker">Galería de proyecto</span>
-          <h3 id="galleryTitle">Proyecto UMAYUX</h3>
-          <p id="galleryDescription">
-            Registro visual de trabajos ejecutados en campo.
-          </p>
+          <span class="gallery-kicker">Galería</span>
+          <h3 id="galleryTitle">Proyecto</h3>
+          <p id="galleryDescription">Imágenes del trabajo realizado</p>
         </div>
-        <button class="gallery-close" id="galleryClose" aria-label="Cerrar galería">×</button>
+        <button class="gallery-close" id="galleryClose">×</button>
       </div>
 
       <div class="gallery-stage">
-        <img src="" alt="Galería UMAYUX" class="gallery-main-img" id="galleryMainImage" />
-        <button class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Imagen anterior">‹</button>
-        <button class="gallery-nav gallery-next" id="galleryNext" aria-label="Imagen siguiente">›</button>
-        <div class="gallery-counter" id="galleryCounter">1 / 3</div>
+        <img id="galleryMainImage" class="gallery-main-img" src="" />
+        <button class="gallery-nav gallery-prev" id="galleryPrev">‹</button>
+        <button class="gallery-nav gallery-next" id="galleryNext">›</button>
+        <div class="gallery-counter" id="galleryCounter"></div>
       </div>
 
       <div class="gallery-thumbs" id="galleryThumbs"></div>
 
-      <div class="gallery-foot">
-        <span><strong>UMAYUX ASOCIADOS SAC</strong> | Construcción e infraestructura</span>
-        <span>Haz clic en las miniaturas para cambiar de imagen</span>
-      </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>UMAYUX ASOCIADOS SAC</h3>
-        <p>Construcción, infraestructura técnica y telecomunicaciones.</p>
-      </div>
-
-      <div>
-        <h4>Empresa</h4>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#clientes">Clientes</a>
-      </div>
-
-      <div>
-        <h4>Contacto</h4>
-        <a href="#contacto">Solicitar cotización</a>
-        <a href="https://umayuxperu.com/">umayuxperu.com</a>
-        <span>San Isidro, Lima, Perú</span>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 UMAYUX ASOCIADOS SAC. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
   <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
-      });
-    }
-
-    const revealElements = document.querySelectorAll('.reveal');
-
-    const revealOnScroll = () => {
-      revealElements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top < windowHeight - 80) {
-          element.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', revealOnScroll);
-    window.addEventListener('load', revealOnScroll);
-
-    const counters = document.querySelectorAll('[data-counter]');
-
-    const animateCounter = (counter) => {
-      const target = Number(counter.dataset.counter);
-      let current = 0;
-      const increment = Math.max(1, Math.ceil(target / 80));
-
-      const update = () => {
-        current += increment;
-
-        if (current >= target) {
-          counter.textContent = target;
-          return;
-        }
-
-        counter.textContent = current;
-        requestAnimationFrame(update);
-      };
-
-      update();
-    };
-
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.dataset.done) {
-          entry.target.dataset.done = 'true';
-          animateCounter(entry.target);
-        }
-      });
-    }, { threshold: 0.45 });
-
-    counters.forEach((counter) => counterObserver.observe(counter));
-
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        filterButtons.forEach((btn) => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        const filter = button.dataset.filter;
-
-        projectCards.forEach((card) => {
-          const category = card.dataset.category;
-          card.style.display = filter === 'all' || category === filter ? 'block' : 'none';
-        });
-      });
-    });
-        const galleries = {
+    const galleries = {
       cliente1: {
-        title: 'Cliente corporativo',
-        description: 'Registro visual de trabajos y servicios vinculados a infraestructura.',
         images: [
-          'media/cliente1-1.jpg',
-          'media/cliente1-2.jpg',
-          'media/cliente1-3.jpg'
+          "media/digitel-imagenes/digitel-1.png",
+          "media/digitel-imagenes/digitel-2.png",
+          "media/digitel-imagenes/digitel-3.png"
         ]
       },
       cliente2: {
-        title: 'Cliente estratégico',
-        description: 'Galería de trabajos ejecutados con enfoque técnico y operativo.',
         images: [
-          'media/cliente2-1.jpg',
-          'media/cliente2-2.jpg',
-          'media/cliente2-3.jpg'
+          "media/lps-imagenes/lps-1.png",
+          "media/lps-imagenes/lps-2.png",
+          "media/lps-imagenes/lps-3.png"
         ]
       },
       cliente3: {
-        title: 'Aliado técnico',
-        description: 'Evidencia visual de proyectos de soporte, obra e infraestructura.',
         images: [
-          'media/cliente3-1.jpg',
-          'media/cliente3-2.jpg',
-          'media/cliente3-3.jpg'
+          "media/montemar-imagenes/montemar-1.png",
+          "media/montemar-imagenes/montemar-2.png",
+          "media/montemar-imagenes/montemar-3.png"
         ]
       },
       cliente4: {
-        title: 'Proyecto especializado',
-        description: 'Trabajos especializados vinculados a infraestructura técnica.',
         images: [
-          'media/cliente4-1.jpg',
-          'media/cliente4-2.jpg',
-          'media/cliente4-3.jpg'
+          "media/telrad-imagenes/telrad-1.png",
+          "media/telrad-imagenes/telrad-2.png",
+          "media/telrad-imagenes/telrad-3.png"
         ]
       },
       cliente5: {
-        title: 'Infraestructura y soporte',
-        description: 'Galería de intervención técnica, soporte y ejecución en campo.',
         images: [
-          'media/cliente5-1.jpg',
-          'media/cliente5-2.jpg',
-          'media/cliente5-3.jpg'
+          "media/tgi-imagenes/tgi-1.png",
+          "media/tgi-imagenes/tgi-2.png",
+          "media/tgi-imagenes/tgi-3.png"
+        ]
+      },
+      cliente6: {
+        images: [
+          "media/yofc-imagenes/yofc-1.png",
+          "media/yofc-imagenes/yofc-2.png",
+          "media/yofc-imagenes/yofc-3.png"
         ]
       }
     };
 
-    const galleryModal = document.getElementById('galleryModal');
-    const galleryTitle = document.getElementById('galleryTitle');
-    const galleryDescription = document.getElementById('galleryDescription');
-    const galleryMainImage = document.getElementById('galleryMainImage');
-    const galleryCounter = document.getElementById('galleryCounter');
-    const galleryThumbs = document.getElementById('galleryThumbs');
-    const galleryClose = document.getElementById('galleryClose');
-    const galleryPrev = document.getElementById('galleryPrev');
-    const galleryNext = document.getElementById('galleryNext');
+    const cards = document.querySelectorAll("[data-gallery]");
+    const modal = document.getElementById("galleryModal");
+    const mainImg = document.getElementById("galleryMainImage");
+    const thumbs = document.getElementById("galleryThumbs");
+    const counter = document.getElementById("galleryCounter");
 
-    let currentGallery = null;
-    let currentIndex = 0;
+    let current = [];
+    let index = 0;
 
-    const renderGallery = () => {
-      if (!currentGallery) return;
+    cards.forEach(card => {
+      card.onclick = () => {
+        current = galleries[card.dataset.gallery].images;
+        index = 0;
+        show();
+        modal.classList.add("open");
+      };
+    });
 
-      galleryTitle.textContent = currentGallery.title;
-      galleryDescription.textContent = currentGallery.description;
-      galleryMainImage.src = currentGallery.images[currentIndex];
-      galleryCounter.textContent = `${currentIndex + 1} / ${currentGallery.images.length}`;
-
-      galleryThumbs.innerHTML = '';
-
-      currentGallery.images.forEach((image, index) => {
-        const thumb = document.createElement('div');
-        thumb.className = `gallery-thumb ${index === currentIndex ? 'active' : ''}`;
-
-        const img = document.createElement('img');
-        img.src = image;
-        img.alt = `${currentGallery.title} ${index + 1}`;
-
-        thumb.appendChild(img);
-
-        thumb.addEventListener('click', () => {
-          currentIndex = index;
-          renderGallery();
-        });
-
-        galleryThumbs.appendChild(thumb);
+    function show() {
+      mainImg.src = current[index];
+      counter.textContent = `${index + 1} / ${current.length}`;
+      thumbs.innerHTML = "";
+      current.forEach((img, i) => {
+        const t = document.createElement("img");
+        t.src = img;
+        t.onclick = () => {
+          index = i;
+          show();
+        };
+        thumbs.appendChild(t);
       });
+    }
+
+    document.getElementById("galleryClose").onclick = () => {
+      modal.classList.remove("open");
     };
 
-    document.querySelectorAll('[data-gallery]').forEach((card) => {
-      card.addEventListener('click', () => {
-        const galleryKey = card.dataset.gallery;
-        currentGallery = galleries[galleryKey];
-        currentIndex = 0;
-
-        if (!currentGallery) return;
-
-        galleryModal.classList.add('open');
-        document.body.style.overflow = 'hidden';
-        renderGallery();
-      });
-    });
-
-    const closeGallery = () => {
-      galleryModal.classList.remove('open');
-      document.body.style.overflow = '';
+    document.getElementById("galleryPrev").onclick = () => {
+      index = (index - 1 + current.length) % current.length;
+      show();
     };
 
-    galleryClose.addEventListener('click', closeGallery);
-
-    galleryModal.addEventListener('click', (event) => {
-      if (event.target === galleryModal) {
-        closeGallery();
-      }
-    });
-
-    galleryPrev.addEventListener('click', () => {
-      if (!currentGallery) return;
-      currentIndex = (currentIndex - 1 + currentGallery.images.length) % currentGallery.images.length;
-      renderGallery();
-    });
-
-    galleryNext.addEventListener('click', () => {
-      if (!currentGallery) return;
-      currentIndex = (currentIndex + 1) % currentGallery.images.length;
-      renderGallery();
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (!galleryModal.classList.contains('open')) return;
-
-      if (event.key === 'Escape') {
-        closeGallery();
-      }
-
-      if (event.key === 'ArrowLeft') {
-        galleryPrev.click();
-      }
-
-      if (event.key === 'ArrowRight') {
-        galleryNext.click();
-      }
-    });
+    document.getElementById("galleryNext").onclick = () => {
+      index = (index + 1) % current.length;
+      show();
+    };
   </script>
+
 </body>
 </html>
