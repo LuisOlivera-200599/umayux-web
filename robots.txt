@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luisolivera-200599.github.io/umayux-web/sitemap.xml
+Sitemap: https://umayuxperu.com/sitemap.xml
